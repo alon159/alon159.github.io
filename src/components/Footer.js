@@ -18,12 +18,12 @@ const Footer = () => {
           <a href="https://linkedin.com/in/alonsocrespo" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
             LinkedIn
           </a>
-          <a href="mailto:tuemail@ejemplo.com" className="hover:text-gray-400">
+          <a href="mailto:aloncrespfer@gmail.com" className="hover:text-gray-400">
             Email
           </a>
         </div>
 
-        <p className="text-xs text-gray-500">© 2024 Alonso Crespo Fernández. Todos los derechos reservados.</p>
+        <p className="text-xs text-gray-500">© 2025 Alonso Crespo Fernández. Todos los derechos reservados.</p>
       </div>
     </footer>
   );
