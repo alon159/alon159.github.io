@@ -1,0 +1,22 @@
+{
+  "short_name": "Portfolio",
+  "name": "Portfolio de Alonso Crespo",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "1024x1024"
+    },
+    {
+      "src": "/logoBlanco.png",
+      "type": "image/png",
+      "sizes": "1024x1024"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#1a202c",
+  "background_color": "#f7fafc",
+  "description": "Portfolio de Alonso Crespo",
+  "lang": "es-ES"
+}

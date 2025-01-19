@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.49313a53.css",
+    "main.js": "/static/js/main.764522ec.js",
+    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/tailwind.png": "/static/media/tailwind.f15442967bf9302c0141.png",
+    "static/media/yo.jpg": "/static/media/yo.869a95d03aa7e0d33914.jpg",
+    "static/media/compresi.png": "/static/media/compresi.4b8d4d0fd34038fd345f.png",
+    "static/media/beattracker.jpg": "/static/media/beattracker.5afad70d7e385fa69efd.jpg",
+    "static/media/logo.png": "/static/media/logo.062344b1eff279f6fd5a.png",
+    "static/media/logoBlanco.png": "/static/media/logoBlanco.f105afbc10571244d2bd.png",
+    "static/media/ies.png": "/static/media/ies.7057e8f0a2ddb2b84cb3.png",
+    "static/media/frontend.png": "/static/media/frontend.a58d40fb4e0ed94aae15.png",
+    "static/media/adaptabilidad.png": "/static/media/adaptabilidad.14ee7310b552c40d9442.png",
+    "static/media/basededatos.png": "/static/media/basededatos.eadb9b4e660246835635.png",
+    "static/media/autonomia.png": "/static/media/autonomia.80557c786e8258dc9043.png",
+    "static/media/curiosidad.png": "/static/media/curiosidad.5fa4f09a20c22a8a6ccf.png",
+    "static/media/infra.png": "/static/media/infra.3836b4034d4154e6f17a.png",
+    "static/media/creatividad.png": "/static/media/creatividad.f023d551e1b8beb8f2d0.png",
+    "static/media/littleerp.jpg": "/static/media/littleerp.3fb954c52cd2813da472.jpg",
+    "static/media/trabajoenequipo.png": "/static/media/trabajoenequipo.8efc64cd65ca53a355a9.png",
+    "static/media/pokemon.png": "/static/media/pokemon.a2c1fd0d5ea3396fb184.png",
+    "static/media/comunicacionefectiva.png": "/static/media/comunicacionefectiva.a9656948c7efae1952aa.png",
+    "static/media/cs.png": "/static/media/cs.98cc4f4573fd852035bf.png",
+    "static/media/resoluciondeproblemas.png": "/static/media/resoluciondeproblemas.66a22b86a94076be4f0a.png",
+    "static/media/net.png": "/static/media/net.5a400b99d1056e97e895.png",
+    "static/media/react.png": "/static/media/react.463e60c64dace98fe2e0.png",
+    "static/media/backend.png": "/static/media/backend.959934ddc1234d604653.png",
+    "static/media/pensamiento.png": "/static/media/pensamiento.6399f9c4a884d67fed51.png",
+    "static/media/herramientas.png": "/static/media/herramientas.82c8935e5aa8bb453978.png",
+    "static/media/spain-flag-square-xs.png": "/static/media/spain-flag-square-xs.ce581b6202a0e22088a1.png",
+    "index.html": "/index.html",
+    "main.49313a53.css.map": "/static/css/main.49313a53.css.map",
+    "main.764522ec.js.map": "/static/js/main.764522ec.js.map",
+    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49313a53.css",
+    "static/js/main.764522ec.js"
+  ]
+}
