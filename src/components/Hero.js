@@ -9,13 +9,13 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gray-100 bg-grid-pattern"></div>
       <div className="relative px-4 mx-auto max-w-screen-xl sm:px-6 lg:px-8">
         <div className="mx-auto text-center">
-          <p className="mt-5 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight">
+          <h1 className="mt-5 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight">
             Bienvenido! Soy Alonso Crespo y soy{" "}
             <span className="relative inline-flex">
               <span className="bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] blur-lg filter opacity-30 w-full h-full absolute inset-0" />
               <span className="relative">Ingeniero Informático!</span>
             </span>
-          </p>
+          </h1>
           <p className="mt-8 text-base text-gray-500 font-inter">
             Este es mi portfolio, donde podrás encontrar información sobre mis
             habilidades, mi experiencia y proyectos realizados.
