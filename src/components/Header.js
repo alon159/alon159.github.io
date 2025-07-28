@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import CVButton1 from "./CVButton1";
 import CVButton2 from "./CVButton2";
 import logo from "../assets/images/logo_portfolio/logo.png";
@@ -27,15 +29,15 @@ const Header = () => {
     <header className="fixed top-0 left-0 w-full z-50">
       <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen">
-          <a
+          <Link
             href="/"
             className="flex items-center"
           >
-            <img src={logo} className="mr-3 h-6 sm:h-9" alt="Logo" />
+            <Image src={logo} className="mr-3" width={40} height={40} alt="Logo" />
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
               Alonso Crespo
             </span>
-          </a>
+          </Link>
           <div className="flex items-center lg:order-2">
             <CVButton1 />
             <button

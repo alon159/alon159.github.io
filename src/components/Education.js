@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Timeline from "./Timeline";
 import spainflag from "../assets/images/spain-flag-square-xs.png";
 import ukflag from "../assets/images/united-kingdom-flag-square-xs.png";
@@ -14,10 +15,10 @@ const Education = () => {
     {
       titulo: "Grado en Ingeniería Informática",
       logo: uclm,
-      fecha: "Septiembre 2020",
+      fecha: "Septiembre 2020 - Julio 2025",
       lugar: "Escuela Superior de Informática de Ciudad Real, UCLM",
       detalle: "Especialización en Tecnologías de la Información",
-      actual: true,
+      actual: false,
     },
     {
       titulo: "Bachillerato",
@@ -42,7 +43,7 @@ const Education = () => {
       className="bg-white text-gray-800 p-8 scroll-mt-16"
     >
       <h2 className="text-3xl font-semibold text-primary-700">Formación</h2>
-      <div className="flex flex-col mt-5 lg:flex-row items-top justify-center max-w-screen-xl mx-auto gap-8 lg:gap-64">
+      <div className="flex flex-col mt-5 lg:flex-row items-top justify-center max-w-(--breakpoint-xl) mx-auto gap-8 lg:gap-64">
         <div className="flex flex-col justify-center items-center">
           <h3 className="text-2xl font-bold">Académica</h3>
           <Timeline eventos={eventos} />
@@ -56,7 +57,7 @@ const Education = () => {
                 className="flex flex-row gap-4 items-center bg-white-100 p-4 rounded-lg mb-4 border-2 border-grey-100 transition-transform transform hover:scale-105 hover:shadow-md"
                 aria-label={`Idioma ${lang.language} con nivel ${lang.level}`}
               >
-                <img src={lang.flag} alt={lang.language} className="w-10 h-8" />
+                <Image src={lang.flag} alt={lang.language} width={40} height={40} className="h-7"/>
                 <div className="flex flex-col">
                   <h3 className="text-lg font-semibold text-gray-900">
                     {lang.language}

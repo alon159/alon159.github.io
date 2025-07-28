@@ -14,7 +14,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* Añadimos un margin-top para evitar que el contenido quede oculto bajo el header */}
       <main className="pt-16">
       <Hero />
         <StickyScrollReveal>

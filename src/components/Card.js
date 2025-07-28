@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Card = ({ project }) => {
   return (
@@ -9,10 +10,11 @@ const Card = ({ project }) => {
       className="relative group duration-500 cursor-pointer overflow-hidden text-gray-50 h-36 w-28 sm:h-72 sm:w-56 rounded-2xl hover:duration-700 duration-700"
     >
       <div className="h-36 w-28 sm:h-72 sm:w-56 bg-black text-gray-800 relative">
-        <img
+        <Image
           src={project.logo}
+          fill={true}
           alt="Logo"
-          className="w-full h-full object-cover mx-auto transition-opacity duration-500 group-hover:opacity-50"
+          className="object-cover mx-auto transition-opacity duration-500 group-hover:opacity-50"
         />
       </div>
       <div className="absolute bg-gray-50 -bottom-32 sm:-bottom-24 w-28 sm:w-56 p-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-600 duration-500">
@@ -21,11 +23,11 @@ const Card = ({ project }) => {
         </span>
         <div className="flex justify-center gap-2 mt-2">
           {project.tecs.map((tech, index) => (
-            <img
+            <Image
               key={index}
               src={tech}
+              width={25}
               alt={`Logo de ${tech}`}
-              className="w-6 h-6"
             />
           ))}
         </div>

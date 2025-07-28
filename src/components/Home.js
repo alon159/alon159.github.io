@@ -1,5 +1,5 @@
-// src/components/Home.js
 import React from "react";
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -7,7 +7,7 @@ const Home = () => {
       id="home"
       className="bg-gray-100 dark:bg-gray-900 h-screen flex items-center scroll-mt-16"
     >
-      <div className="gap-8 items-center px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 lg:px-6">
+      <div className="gap-8 items-center px-4 mx-auto max-w-(--breakpoint-xl) xl:gap-16 md:grid md:grid-cols-2 lg:px-6">
         <div className="mt-4 mb-6">
           <h1 className="text-4xl tracking-tight font-bold text-gray-900 dark:text-white">
             Hola! Soy Alonso Crespo y soy
@@ -38,18 +38,6 @@ const Home = () => {
             </svg>
           </a>
         </div>
-        <img
-          className="w-full dark:hidden"
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
-          alt="dashboard image1"
-        />
-        {
-          <img
-            className="w-full hidden dark:block"
-            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg"
-            alt="dashboard image2"
-          />
-        }
       </div>
     </section>
   );

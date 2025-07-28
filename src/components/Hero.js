@@ -7,12 +7,12 @@ const Hero = () => {
       className="bg-gray-100 flex items-center h-screen scroll-mt-16 relative"
     >
       <div className="absolute inset-0 bg-gray-100 bg-grid-pattern"></div>
-      <div className="relative px-4 mx-auto max-w-screen-xl sm:px-6 lg:px-8">
+      <div className="relative px-4 mx-auto max-w-(--breakpoint-xl) sm:px-6 lg:px-8">
         <div className="mx-auto text-center">
           <h1 className="mt-5 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight">
             Bienvenido! Soy Alonso Crespo y soy{" "}
             <span className="relative inline-flex">
-              <span className="bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] blur-lg filter opacity-30 w-full h-full absolute inset-0" />
+              <span className="bg-linear-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] blur-lg filter opacity-30 w-full h-full absolute inset-0" />
               <span className="relative">Ingeniero Informático!</span>
             </span>
           </h1>

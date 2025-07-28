@@ -1,6 +1,7 @@
 // src/components/Skills.js
 import React from "react";
-import pensamientoanalitico from "../assets/images/softskills/pensamiento.png";
+import Image from "next/image";
+import pensamiento from "../assets/images/softskills/pensamiento.png";
 import trabajoenequipo from "../assets/images/softskills/trabajoenequipo.png";
 import resoluciondeproblemas from "../assets/images/softskills/resoluciondeproblemas.png";
 import curiosidad from "../assets/images/softskills/curiosidad.png";
@@ -17,7 +18,7 @@ import herramientas from "../assets/images/hardskills/herramientas.png";
 
 const Skills = () => {
   const softSkills = [
-    { skill: "Pensamiento analítico", img: pensamientoanalitico },
+    { skill: "Pensamiento analítico", img: pensamiento },
     { skill: "Trabajo en equipo", img: trabajoenequipo },
     { skill: "Resolución de problemas", img: resoluciondeproblemas },
     { skill: "Curiosidad y aprendizaje continuo", img: curiosidad },
@@ -84,7 +85,7 @@ const Skills = () => {
   return (
     <section id="skills" className="bg-gray-100 p-8 scroll-mt-16">
       <h2 className="text-3xl font-semibold text-primary-700">Habilidades</h2>
-      <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-8 lg:px-6">
+      <div className="py-8 px-4 mx-auto max-w-(--breakpoint-xl) sm:py-8 lg:px-6">
         <h3 className="flex justify-center mx-auto text-2xl font-bold">
           Personales
         </h3>
@@ -95,10 +96,12 @@ const Skills = () => {
               className="flex flex-col items-center justify-center border-gray-300 rounded-xl p-6 border-2 transition-transform duration-300 hover:scale-105 hover:shadow-md hover:bg-gray-200"
             >
               <div className="flex justify-center items-center w-16 h-16 rounded-full bg-primary-100 shadow-md">
-                <img
+                <Image
                   src={skill.img}
+                  width={40}
+                  height={40}
                   alt={skill.skill}
-                  className="w-10 object-contain"
+                  className="object-contain"
                 />
               </div>
               <p className="mt-2 text-center font-semibold">{skill.skill}</p>
@@ -106,7 +109,7 @@ const Skills = () => {
           ))}
         </div>
       </div>
-      <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-8 lg:px-6">
+      <div className="py-8 px-4 mx-auto max-w-(--breakpoint-xl) sm:py-8 lg:px-6">
         <h3 className="flex justify-center mx-auto text-2xl font-bold">
           Técnicas
         </h3>
@@ -117,8 +120,10 @@ const Skills = () => {
               className="border-gray-300 rounded-xl p-6 border-2 transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-200"
             >
               <div className="flex justify-center items-center mb-2 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 shadow-md">
-                <img
+                <Image
                   src={skill.img}
+                  width={40}
+                  height={40}
                   alt={skill.nombre}
                   className="w-6 sm:w-8 object-contain"
                 />

@@ -1,15 +1,16 @@
 import React from "react";
+import Image from "next/image";
 
 const Timeline = ({eventos}) => {
   return (
-    <ol className="relative border-s border-gray-200 dark:border-gray-700 mt-10 ml-3.5 sm:ml-0">
+    <ol className="relative border-s border-gray-200 dark:border-gray-700 mt-10 ml-4 sm:ml-0">
       {eventos.map((evento, index) => (
         <li key={index} className="mb-10 ms-6">
-          <span className="absolute flex items-center justify-center w-7 h-7 rounded-full -start-3.5 ring-8 ring-transparent dark:ring-gray-900 dark:bg-blue-900">
-            <img
+          <span className="absolute flex items-center justify-center w-8 h-7 rounded-full -start-4 ring-8 ring-transparent dark:ring-gray-900 dark:bg-blue-900">
+            <Image
             src={evento.logo}
+            fill={true}
             alt="icono"
-            className="w-full h-full"
             />
           </span>
           <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
