@@ -1,7 +1,7 @@
 // src/components/Experience.js
 import React from "react";
 import Timeline from "../util/Timeline";
-import uclm from "../../assets/images/uclm.png";
+import uclm from "../../assets/images/education/uclm.png";
 
 const Experience = () => {
   const eventos = [
