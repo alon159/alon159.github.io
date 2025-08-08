@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="bg-transparent min-h-screen flex md:items-center scroll-mt-15 relative"
+      className="bg-transparent min-h-screen flex items-center scroll-mt-15 relative"
     >
       <div className="absolute inset-0 bg-gray-100 dark:bg-gray-800 w-full bg-grid-pattern -z-10" />
       <div className="gap-8 items-center px-4 mx-auto max-w-(--breakpoint-xl) xl:gap-16 md:grid md:grid-cols-2 md:px-10">
