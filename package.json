@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "homepage": "https://alon159.github.io",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@next/third-parties": "^15.4.2",
@@ -21,9 +21,9 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "npx serve@latest ./build",
+    "start": "npx serve@latest ./out",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d out",
     "lint": "next lint"
   },
   "browserslist": {

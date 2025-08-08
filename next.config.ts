@@ -1,7 +1,7 @@
 import type { NextConfig } from 'next'
- 
+
 const nextConfig: NextConfig = {
-    distDir: 'build', // Changes the build output directory to `build`
+  output: 'export', // Outputs a Single-Page Application (SPA)
 }
- 
+
 export default nextConfig

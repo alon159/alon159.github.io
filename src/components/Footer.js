@@ -1,29 +1,22 @@
 // src/components/Footer.js
 import React from 'react';
+import Link from 'next/link';
+import ContactInfo from './util/ContactInfo';
+import Logo from './util/Logo';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-6">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="mb-4">
-          <p className="text-xl font-semibold">Gracias por visitar mi portafolio</p>
-          <p className="text-sm mt-2">Diseñado y desarrollado por Alonso Crespo Fernández</p>
+    <footer className="bg-white dark:bg-gray-900 border-gray-200 border-t-1 dark:border-gray-700">
+      <div className="w-full px-8 mx-auto p-4 md:py-8">
+        <div className="sm:flex sm:items-center sm:justify-between">
+          <Logo />
+          <ContactInfo className="self-center justify-center mt-5 sm:mt-0" />
         </div>
-
-        {/* Enlaces a redes sociales */}
-        <div className="flex justify-center space-x-6 mb-4">
-          <a href="https://github.com/alon159" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
-            GitHub
-          </a>
-          <a href="https://linkedin.com/in/alonsocrespo" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
-            LinkedIn
-          </a>
-          <a href="mailto:aloncrespfer@gmail.com" className="hover:text-gray-400">
-            Email
-          </a>
+        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-sm text-gray-500 dark:text-gray-400">
+          <span className="block sm:text-center">© 2025 <Link href="/" className="hover:underline">Alonso Crespo Fernández</Link>. Todos los derechos reservados.</span>
+          <span className="block text-xs mt-2 sm:mt-0">Última actualización: Agosto 2025</span>
         </div>
-
-        <p className="text-xs text-gray-500">© 2025 Alonso Crespo Fernández. Todos los derechos reservados.</p>
       </div>
     </footer>
   );
