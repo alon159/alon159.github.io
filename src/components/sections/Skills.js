@@ -86,7 +86,7 @@ const Skills = () => {
         <h3 className="flex justify-center mx-auto text-2xl font-bold">
           Personales
         </h3>
-        <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-12">
+        <div className="mt-10 grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-12">
           {softSkills.map((skill, index) => (
             <div
               key={index}
