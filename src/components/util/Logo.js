@@ -3,11 +3,11 @@ import Link from "next/link";
 import logo from "../../assets/images/logo_portfolio/logo.png";
 import logoBlanco from "../../assets/images/logo_portfolio/logoBlanco.png";
 
-const Logo = () => {
+const Logo = ({ className = "" }) => {
     return (
         <Link
             href="/"
-            className="flex items-center">
+            className={`flex items-center ${className}`}>
             {/* eslint-disable @next/next/no-img-element */}
             <img src={logo.src} className="mr-3 h-6 sm:h-9 dark:hidden" alt="Logo" />
             <img src={logoBlanco.src} className="mr-3 h-6 sm:h-9 hidden dark:block" alt="Logo" />

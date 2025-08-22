@@ -1,9 +1,9 @@
-// src/components/Experience.js
-import React from "react";
 import Timeline from "../util/Timeline";
 import uclm from "../../assets/images/education/uclm.png";
+import { useScrollReveal } from '../util/useScrollReveal';
 
 const Experience = () => {
+  const { ref, className } = useScrollReveal();
   const eventos = [
     {
       titulo: "Becario TIC",
@@ -16,7 +16,7 @@ const Experience = () => {
     },
   ];
   return (
-    <section id="experience" className="bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-gray-100 p-8 scroll-mt-15">
+    <section id="experience" ref={ref} className={`bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-gray-100 p-8 scroll-mt-15 ${className}`}>
       <h2 className="text-3xl font-semibold text-primary-700">Experiencia</h2>
       <div className="flex justify-center mx-auto">
         <Timeline eventos={eventos} />

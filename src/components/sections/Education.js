@@ -1,11 +1,12 @@
-import React from "react";
 import Timeline from "../util/Timeline";
 import spainflag from "../../assets/images/education/spain-flag-square-xs.png";
 import ukflag from "../../assets/images/education/united-kingdom-flag-square-xs.png";
 import uclm from "../../assets/images/education/uclm.png";
 import ies from "../../assets/images/education/ies.png";
+import { useScrollReveal } from '../util/useScrollReveal';
 
 const Education = () => {
+  const { ref, className } = useScrollReveal();
   const languages = [
     { language: "Español", level: "Lengua nativa", flag: spainflag },
     { language: "Inglés", level: "B2 First Cambridge", flag: ukflag },
@@ -46,7 +47,8 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 p-8 scroll-mt-15"
+      ref={ref}
+      className={`bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 p-8 scroll-mt-15 ${className}`}
     >
       <h2 className="text-3xl font-semibold text-primary-700">Formación</h2>
       <div className="flex flex-col mt-5 lg:flex-row items-top justify-center max-w-(--breakpoint-xl) mx-auto gap-8 lg:gap-64">

@@ -1,5 +1,4 @@
-// src/components/Projects.js
-import React, { useState } from "react";
+import { useState } from "react";
 import Carda from "../util/Carda";
 import beattracker from "../../assets/images/logos/beattracker.jpg";
 import littleerp from "../../assets/images/logos/littleerp.jpg";
@@ -28,8 +27,12 @@ import selenium from "../../assets/images/techs/selenium.svg";
 import ticketmaster from "../../assets/images/techs/ticketmaster.png";
 import android from "../../assets/images/techs/android.svg";
 import java from "../../assets/images/techs/java.svg";
+import firebase from "../../assets/images/techs/firebase.svg";
+import couchbase from "../../assets/images/techs/couchbase.svg";
+import { useScrollReveal } from '../util/useScrollReveal';
 
 const Projects = () => {
+  const { ref, className } = useScrollReveal();
   const [filtroTipo, setFiltroTipo] = useState("todos");
 
   const technologies = {
@@ -49,6 +52,8 @@ const Projects = () => {
     Ticketmaster: { light: ticketmaster, dark: ticketmaster },
     Android: { light: android, dark: android },
     Java: { light: java, dark: java },
+    Firebase: { light: firebase, dark: firebase },
+    Couchbase: { light: couchbase, dark: couchbase },
   };
 
   const projects = [
@@ -57,7 +62,7 @@ const Projects = () => {
       logo: tfg,
       nombre: "Crowdsense",
       tipo: "movil",
-      tecs: ["Android", "Java"],
+      tecs: ["Android", "Java", "Firebase", "Couchbase"],
       txt: "Aplicación para facilitar la coordinación de ayuda ciudadana en situaciones de emergencia.",
     },
     {
@@ -131,7 +136,7 @@ const proyectosFiltrados = filtroTipo === "todos"
   : projects.filter(project => project.tipo === filtroTipo).sort((a, b) => a.nombre.localeCompare(b.nombre));
 
   return (
-    <section id="projects" className="min-h-screen bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-8 scroll-mt-15">
+    <section id="projects" ref={ref} className={`min-h-screen bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-8 scroll-mt-15 ${className}`}>
       <h2 className="text-3xl font-semibold text-primary-700">Proyectos</h2>
       <div className="mt-6 mb-8">
         <div className="flex flex-col lg:flex-row items-center justify-center gap-4">

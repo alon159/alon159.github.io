@@ -1,11 +1,11 @@
-// src/components/About.js
-import React from "react";
 import miniyo from "../../assets/images/about/miniyo.jpg";
 import graduado from "../../assets/images/about/graduado.jpg";
+import { useScrollReveal } from '../util/useScrollReveal';
 
 const About = () => {
+  const { ref, className } = useScrollReveal();
   return (
-    <section id="about" className="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-8 scroll-mt-15">
+    <section id="about" ref={ref} className={`bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-8 scroll-mt-15 ${className}`}>
       <h2 className="text-3xl font-semibold text-primary-700">Sobre mí</h2>
       <div className="flex flex-col mt-10 lg:flex-row items-center justify-center mx-auto gap-16 max-w-screen-lg">
         <p className="text-lg">

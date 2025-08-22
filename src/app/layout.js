@@ -1,4 +1,5 @@
 import { GoogleTagManager } from '@next/third-parties/google';
+import { ThemeProvider } from 'next-themes'
 import '../index.css'
 
 export const viewport = {
@@ -14,10 +15,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="es">
+        <html lang="es" suppressHydrationWarning>
             <body>
                 <GoogleTagManager gtmId="GTM-PFBKJH8Q" />
-                <div id="root">{children}</div>
+                <ThemeProvider id="root" attribute="class">{children}</ThemeProvider>
             </body>
         </html>
 

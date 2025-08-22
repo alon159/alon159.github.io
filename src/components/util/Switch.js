@@ -1,51 +1,26 @@
 import React, { useEffect, useState } from "react";
+import { useTheme } from 'next-themes'
 
-const Switch = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  useEffect(() => {
-    // Check if we're in the browser environment
-    if (typeof window !== 'undefined') {
-      // Check system preference for dark mode
-      const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      setIsDarkMode(prefersDarkMode);
-
-      // Listen for changes in system theme
-      const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-      const handleThemeChange = (e) => {
-        setIsDarkMode(e.matches);
-      };
-
-      mediaQuery.addEventListener('change', handleThemeChange);
-
-      // Cleanup listener on component unmount
-      return () => {
-        mediaQuery.removeEventListener('change', handleThemeChange);
-      };
-    }
-  }, []);
-
-  // Apply theme changes to the document
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const htmlElement = document.documentElement;
-
-      if (isDarkMode) {
-        htmlElement.classList.add('dark');
-        htmlElement.style.colorScheme = 'dark';
-      } else {
-        htmlElement.classList.remove('dark');
-        htmlElement.style.colorScheme = 'light';
-      }
-    }
-  }, [isDarkMode]);
+const Switch = ({ className = "" }) => {
+  const [mounted, setMounted] = useState(false)
+  const {resolvedTheme, setTheme} = useTheme();
 
   const handleToggle = () => {
-    setIsDarkMode(!isDarkMode);
+    setTheme(resolvedTheme === 'dark' ? 'light' : 'dark');
   };
+  
+  const isDarkMode = resolvedTheme === 'dark';
+
+  useEffect(() => {
+    setMounted(true)
+  }, []);
+
+  if (!mounted) {
+    return null
+  }
 
   return (
-    <label className="inline-flex items-center relative cursor-pointer">
+    <label className={`inline-flex items-center relative cursor-pointer ${className}`}>
       <input
         className="peer hidden"
         id="toggle"

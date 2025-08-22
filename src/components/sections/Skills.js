@@ -1,4 +1,3 @@
-import React from "react";
 import pensamiento from "../../assets/images/softskills/pensamiento.png";
 import trabajoenequipo from "../../assets/images/softskills/trabajoenequipo.png";
 import resoluciondeproblemas from "../../assets/images/softskills/resoluciondeproblemas.png";
@@ -13,8 +12,10 @@ import backend from "../../assets/images/hardskills/backend.png";
 import basededatos from "../../assets/images/hardskills/basededatos.png";
 import infra from "../../assets/images/hardskills/infra.png";
 import herramientas from "../../assets/images/hardskills/herramientas.png";
+import { useScrollReveal } from '../util/useScrollReveal';
 
 const Skills = () => {
+  const { ref, className } = useScrollReveal();
   const softSkills = [
     { skill: "Pensamiento analítico", img: pensamiento },
     { skill: "Trabajo en equipo", img: trabajoenequipo },
@@ -46,23 +47,22 @@ const Skills = () => {
     {
       img: backend,
       nombre: "Desarrollo Backend",
-      skills: ["Spring Boot", "Flask"],
+      skills: ["Spring Boot", "Flask", "Firebase"],
     },
     {
       img: basededatos,
       nombre: "Bases de Datos",
-      skills: ["MySQL", "SQLite", "H2", "eXist"],
+      skills: ["MySQL", "SQLite", "H2", "eXist", "Couchbase"],
     },
     {
       img: infra,
       nombre: "Infraestructura y DevOps",
       skills: [
         "Wordpress",
-        "Linux",
-        "Docker",
         "Node.js",
+        "Github Actions",
         "Github Pages",
-        "VirtualBox",
+        "OneSignal"
       ],
     },
     {
@@ -80,7 +80,7 @@ const Skills = () => {
     },
   ];
   return (
-    <section id="skills" className="bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-gray-100 p-8 scroll-mt-15">
+    <section id="skills" ref={ref} className={`bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-gray-100 p-8 scroll-mt-15 ${className}`}>
       <h2 className="text-3xl font-semibold text-primary-700">Habilidades</h2>
       <div className="py-8 px-4 mx-auto max-w-(--breakpoint-xl) sm:py-8 lg:px-6">
         <h3 className="flex justify-center mx-auto text-2xl font-bold">
