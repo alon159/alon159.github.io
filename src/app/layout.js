@@ -10,7 +10,7 @@ export const metadata = {
     metadataBase: new URL('https://alon159.github.io/'),
     title: 'Alonso Crespo Fernández - Portfolio',
     description: 'Soy Alonso Crespo y este es mi portfolio! Aquí podrás encontrar información sobre mi experiencia y mis proyectos realizados como Ingeniero Informático.',
-    author: 'Alonso Crespo Fernández',
+    authors: [{ name: "Alonso Crespo", url: "https://alon159.github.io/" }],
     keywords: 'Alonso Crespo Fernández, Alonso Crespo Fernandez, alonso.crespo, Ingeniero Informático, UCLM, Web, Ciudad Real, ESI, Escuela Superior de Informática, Tecnología, Información',
     verification: {
         google: '_iFFSbxa_QptjLCfBXKlAFrhr30zjgJrXxWJihbM0xo', // Add your verification code
@@ -19,9 +19,27 @@ export const metadata = {
     openGraph: {
         url: 'https://alon159.github.io/',
         type: 'website',
+        siteName: 'Alonso Crespo Fernández - Portfolio',
+        locale: "es_ES",
     },
     twitter: {
         card: 'summary_large_image'
+    },
+    alternates: {
+        canonical: 'https://alon159.github.io/',
+    },
+    robots: {
+        index: true,
+        follow: true,
+        nocache: false,
+        googleBot: {
+            index: true,
+            follow: true,
+            noimageindex: false,
+            'max-video-preview': -1,
+            'max-image-preview': 'large',
+            'max-snippet': -1,
+        },
     },
 }
 
