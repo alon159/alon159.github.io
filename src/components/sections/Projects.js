@@ -30,10 +30,12 @@ import java from "../../assets/images/techs/java.svg";
 import firebase from "../../assets/images/techs/firebase.svg";
 import couchbase from "../../assets/images/techs/couchbase.svg";
 import { useScrollReveal } from '../util/useScrollReveal';
+import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
   const { ref, className } = useScrollReveal();
   const [filtroTipo, setFiltroTipo] = useState("todos");
+  const { t } = useTranslation();
 
   const technologies = {
     Telegram: { light: telegram, dark: telegram },
@@ -63,7 +65,7 @@ const Projects = () => {
       nombre: "Crowdsense",
       tipo: "movil",
       tecs: ["Android", "Java", "Firebase", "Couchbase"],
-      txt: "Aplicación para facilitar la coordinación de ayuda ciudadana en situaciones de emergencia.",
+      txt: t("projects.crowdsense"),
     },
     {
       link: "https://github.com/FelipeAlcazar/TecWeb-Lists",
@@ -71,7 +73,7 @@ const Projects = () => {
       nombre: "Lists",
       tipo: "web",
       tecs: ["Angular", "Spring", "Selenium"],
-      txt: "Aplicación web colaborativa para la gestión de listas de la compra.",
+      txt: t("projects.lists"),
     },
     {
       link: "https://github.com/AgustinESI/payesi-frontend",
@@ -79,7 +81,7 @@ const Projects = () => {
       nombre: "PayESI",
       tipo: "web",
       tecs: ["Angular", "Flask", "Paypal"],
-      txt: "Aplicación web para realizar transacciones P2P entre usuarios con integración de PayPal.",
+      txt: t("projects.payesi"),
     },
     {
       link: "https://github.com/alon159/isi-beattracker",
@@ -87,7 +89,7 @@ const Projects = () => {
       nombre: "BeatTracker",
       tipo: "otros",
       tecs: ["Telegram", "Python", "Ticketmaster"],
-      txt: "Bot para el seguimiento de eventos y artistas musicales con integración de Ticketmaster.",
+      txt: t("projects.beattracker"),
     },
     {
       link: "https://github.com/FelipeAlcazar/GSI-LittleERP",
@@ -95,7 +97,7 @@ const Projects = () => {
       nombre: "LittleERP",
       tipo: "escritorio",
       tecs: ["Windows", "DotNet", "CSharp"],
-      txt: "Gestor ERP para optimizar la gestión financiera en pequeñas y medianas empresas.",
+      txt: t("projects.littleerp"),
     },
     {
       link: "https://github.com/alon159/ComprESI",
@@ -103,7 +105,7 @@ const Projects = () => {
       nombre: "ComprESI",
       tipo: "escritorio",
       tecs: ["Windows", "DotNet", "CSharp"],
-      txt: "Aplicación de escritorio para la compresión de imágenes instantánea y eficiente.",
+      txt: t("projects.compresi"),
     },
     {
       link: "https://github.com/Enriquesmo/IPO2_Pokemon_Pokedex",
@@ -111,7 +113,7 @@ const Projects = () => {
       nombre: "IPOkemon",
       tipo: "escritorio",
       tecs: ["Windows", "DotNet", "CSharp"],
-      txt: "Aplicación estilo Pokémon con un sistema de combate por turnos.",
+      txt: t("projects.ipokemon"),
     },
     {
       link: "https://github.com/alon159/alon159.github.io",
@@ -119,16 +121,16 @@ const Projects = () => {
       nombre: "Portfolio",
       tipo: "web",
       tecs: ["React", "Tailwind", "Github"],
-      txt: "Portfolio con información personal, proyectos y habilidades.",
+      txt: t("projects.portfolio"),
     },
   ];
 
   const tiposProyecto = [
-    { valor: "todos", label: "Todos" },
-    { valor: "web", label: "Aplicación Web" },
-    { valor: "escritorio", label: "Aplicación de Escritorio" },
-    { valor: "movil", label: "Aplicación Móvil" },
-    { valor: "otros", label: "Otros" }
+    { valor: "todos", label: t("projects.all") },
+    { valor: "web", label: t("projects.web_apps") },
+    { valor: "escritorio", label: t("projects.desktop_apps") },
+    { valor: "movil", label: t("projects.mobile_apps") },
+    { valor: "otros", label: t("projects.others") }
   ];
 
 const proyectosFiltrados = filtroTipo === "todos"
@@ -137,10 +139,10 @@ const proyectosFiltrados = filtroTipo === "todos"
 
   return (
     <section id="projects" ref={ref} className={`min-h-screen bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-8 scroll-mt-15 ${className}`}>
-      <h2 className="text-3xl font-semibold text-primary-700">Proyectos</h2>
+      <h2 className="text-3xl font-semibold text-primary-700">{t("header.projects")}</h2>
       <div className="mt-6 mb-8">
         <div className="flex flex-col lg:flex-row items-center justify-center gap-4">
-          <span className="text-gray-700 dark:text-gray-300 font-medium">Filtrar:</span>
+          <span className="text-gray-700 dark:text-gray-300 font-medium">{t("projects.filter")}</span>
           <div className="flex flex-wrap justify-center dark:bg-gray-800 rounded-lg p-1 shadow-inner max-w-full">
             {tiposProyecto.map((tipo) => (
               <button

@@ -1,0 +1,129 @@
+{
+    "header": {
+        "home": "Home",
+        "about": "About Me",
+        "skills": "Skills",
+        "education": "Education",
+        "experience": "Experience",
+        "projects": "Projects",
+        "contact": "Contact",
+        "language": "Language",
+        "theme": "Theme"
+    },
+    "home": {
+        "title": "Alonso Crespo",
+        "subtitle": "Computer Engineer",
+        "description": "Welcome to my portfolio, where you can find information about my experience, skills, and completed projects.",
+        "cta": "Get to know me!"
+    },
+    "about":{
+        "text1": "Hi!👋 My name is Alonso Crespo Fernández. Since I was young, I have had a strong attraction to computer science. I was fascinated by understanding how computers worked, taking them apart, and tinkering on my own. This initial curiosity eventually turned into a true passion that drove me to learn and train in the technological field.",
+        "text2": "Finally, passionate about developing innovative and effective solutions, I trained as a Computer Engineer. I stand out for my ability to tackle complex problems with a structured approach, always prioritizing quality and functionality in the projects I develop. My commitment to continuous learning and excellence drives me to face new challenges with enthusiasm and creativity."
+    },
+    "skills": {
+        "soft":{
+            "title": "Soft Skills",
+            "analitic_thought": "Analytical Thinking",
+            "teamwork": "Teamwork",
+            "problem_solving": "Problem Solving",
+            "curiosity_and_continuous_learning": "Curiosity and Continuous Learning",
+            "effective_communication": "Effective Communication",
+            "adaptability": "Adaptability",
+            "creativity": "Creativity",
+            "autonomy": "Autonomy"
+        },
+        "hard":{
+            "title": "Hard Skills",
+            "programming_languages": "Programming Languages",
+            "frontend_development": "Frontend Development",
+            "backend_development": "Backend Development",
+            "database": "Databases",
+            "infrastructure_and_devops": "Infrastructure and DevOps",
+            "tools_and_collaboration": "Tools and Collaboration"
+        }
+    },
+    "education": {
+        "academic":{
+            "title": "Academic",
+            "master":{
+                "title": "Master's in Computer Engineering",
+                "date": "September 2025"
+            },
+            "degree":{
+                "title": "Bachelor's in Computer Engineering",
+                "date": "September 2020 - July 2025",
+                "detail": "Specialization in Information Technologies"
+            },
+            "bachelor":{
+                "title": "High School Diploma",
+                "date": "September 2018 - June 2020",
+                "detail": "Science and Technology Track"
+            },
+            "institute":{
+                "title": "Compulsory Secondary Education",
+                "date": "September 2014 - June 2018"
+            }
+        },
+        "languages": {
+            "title": "Languages",
+            "spanish": {
+                "title": "Spanish",
+                "level": "Native"
+            },
+            "english": {
+                "title": "English",
+                "level": "B2 First Cambridge"
+            }
+        }
+    },
+    "experience":{
+        "library":{
+            "title": "TIC Scholarship",
+            "date": "January 2023 - June 2024",
+            "place": "General Library of Ciudad Real, UCLM",
+            "description": "· Preparation and maintenance of equipment for administrative and teaching staff.\n · Attention, information, and resolution of student incidents."
+        }
+    },
+    "projects":{
+        "filter": "Filter:",
+        "all": "All",
+        "web_apps": "Web Applications",
+        "desktop_apps": "Desktop Applications",
+        "mobile_apps": "Mobile Applications",
+        "others": "Others",
+        "project_link": "View Project",
+        "beattracker": "Bot for tracking music events and artists with Ticketmaster integration.",
+        "compresi":"Desktop application for instant and efficient image compression.",
+        "crowdsense": "Application to facilitate citizen aid coordination in emergency situations.",
+        "ipokemon": "Pokémon-style application with a turn-based combat system.",
+        "lists": "Collaborative web application for managing shopping lists.",
+        "littleerp": "ERP manager to optimize financial management in small and medium-sized enterprises.",
+        "payesi": "Web application for P2P transactions between users with PayPal integration.",
+        "portfolio": "Portfolio with personal information, projects, and skills."
+    },
+    "contact": {
+        "contact_info": "Contact Information",
+        "email": "Email",
+        "phone": "Phone",
+        "form": {
+            "title": "Contact Me",
+            "name": "Name",
+            "name_hint": "Contact Name",
+            "email": "Email",
+            "email_hint": "example@example.com",
+            "subject": "Subject",
+            "subject_hint": "Subject of the message",
+            "message": "Message",
+            "message_hint": "Content of the message",
+            "send": "Send message",
+            "sending": "Sending..."
+        }
+    },
+    "footer": {
+        "text": "All rights reserved.",
+        "last_modified": "Last modified: August 2025"
+    },
+        "others":{
+            "current": "Current"
+        }
+}

@@ -13,23 +13,25 @@ import basededatos from "../../assets/images/hardskills/basededatos.png";
 import infra from "../../assets/images/hardskills/infra.png";
 import herramientas from "../../assets/images/hardskills/herramientas.png";
 import { useScrollReveal } from '../util/useScrollReveal';
+import { useTranslation } from 'react-i18next';
 
 const Skills = () => {
   const { ref, className } = useScrollReveal();
+  const { t } = useTranslation();
   const softSkills = [
-    { skill: "Pensamiento analítico", img: pensamiento },
-    { skill: "Trabajo en equipo", img: trabajoenequipo },
-    { skill: "Resolución de problemas", img: resoluciondeproblemas },
-    { skill: "Curiosidad y aprendizaje continuo", img: curiosidad },
-    { skill: "Comunicación efectiva", img: comunicacionefectiva },
-    { skill: "Adaptabilidad", img: adaptabilidad },
-    { skill: "Creatividad", img: creatividad },
-    { skill: "Autonomía", img: autonomia },
+    { skill: t("skills.soft.analitic_thought"), img: pensamiento },
+    { skill: t("skills.soft.teamwork"), img: trabajoenequipo },
+    { skill: t("skills.soft.problem_solving"), img: resoluciondeproblemas },
+    { skill: t("skills.soft.curiosity_and_continuous_learning"), img: curiosidad },
+    { skill: t("skills.soft.effective_communication"), img: comunicacionefectiva },
+    { skill: t("skills.soft.adaptability"), img: adaptabilidad },
+    { skill: t("skills.soft.creativity"), img: creatividad },
+    { skill: t("skills.soft.autonomy"), img: autonomia },
   ];
   const hardSkills = [
     {
       img: codigo,
-      nombre: "Lenguajes de Programación",
+      nombre: t("skills.hard.programming_languages"),
       skills: [
         "Python",
         "Java",
@@ -41,22 +43,22 @@ const Skills = () => {
     },
     {
       img: frontend,
-      nombre: "Desarrollo Frontend",
+      nombre: t("skills.hard.frontend_development"),
       skills: ["React", "Angular", "Tailwind CSS", "Next.js"],
     },
     {
       img: backend,
-      nombre: "Desarrollo Backend",
+      nombre: t("skills.hard.backend_development"),
       skills: ["Spring Boot", "Flask", "Firebase"],
     },
     {
       img: basededatos,
-      nombre: "Bases de Datos",
+      nombre: t("skills.hard.database"),
       skills: ["MySQL", "SQLite", "H2", "eXist", "Couchbase"],
     },
     {
       img: infra,
-      nombre: "Infraestructura y DevOps",
+      nombre: t("skills.hard.infrastructure_and_devops"),
       skills: [
         "Wordpress",
         "Node.js",
@@ -67,7 +69,7 @@ const Skills = () => {
     },
     {
       img: herramientas,
-      nombre: "Herramientas y Colaboración",
+      nombre: t("skills.hard.tools_and_collaboration"),
       skills: [
         "Github (Git)",
         "LaTeX",
@@ -81,10 +83,10 @@ const Skills = () => {
   ];
   return (
     <section id="skills" ref={ref} className={`bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-gray-100 p-8 scroll-mt-15 ${className}`}>
-      <h2 className="text-3xl font-semibold text-primary-700">Habilidades</h2>
+      <h2 className="text-3xl font-semibold text-primary-700">{t("header.skills")}</h2>
       <div className="py-8 px-4 mx-auto max-w-(--breakpoint-xl) sm:py-8 lg:px-6">
         <h3 className="flex justify-center mx-auto text-2xl font-bold">
-          Personales
+          {t("skills.soft.title")}
         </h3>
         <div className="mt-10 grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-12">
           {softSkills.map((skill, index) => (
@@ -108,7 +110,7 @@ const Skills = () => {
       </div>
       <div className="py-8 px-4 mx-auto max-w-(--breakpoint-xl) sm:py-8 lg:px-6">
         <h3 className="flex justify-center mx-auto text-2xl font-bold">
-          Técnicas
+          {t("skills.hard.title")}
         </h3>
         <div className="space-y-8 mt-10 sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-12 sm:space-y-0">
           {hardSkills.map((skill, index) => (

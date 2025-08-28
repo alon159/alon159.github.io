@@ -1,6 +1,7 @@
-import React from "react";
+import { useTranslation } from 'react-i18next';
 
 const Timeline = ({eventos}) => {
+  const { t } = useTranslation();
   return (
     <ol className="relative border-s border-gray-200 dark:border-gray-700 mt-10 ml-4 sm:ml-0">
       {eventos.map((evento, index) => (
@@ -18,7 +19,7 @@ const Timeline = ({eventos}) => {
             {evento.titulo}
             {evento.actual && (
               <span className="bg-primary-600 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-primary-800 ms-3">
-                Actualidad
+                {t('others.current')}
               </span>
             )}
           </h3>

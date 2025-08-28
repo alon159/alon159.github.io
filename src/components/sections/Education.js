@@ -4,41 +4,43 @@ import ukflag from "../../assets/images/education/united-kingdom-flag-square-xs.
 import uclm from "../../assets/images/education/uclm.png";
 import ies from "../../assets/images/education/ies.png";
 import { useScrollReveal } from '../util/useScrollReveal';
+import { useTranslation } from 'react-i18next';
 
 const Education = () => {
   const { ref, className } = useScrollReveal();
+  const { t } = useTranslation();
   const languages = [
-    { language: "Español", level: "Lengua nativa", flag: spainflag },
-    { language: "Inglés", level: "B2 First Cambridge", flag: ukflag },
+    { language: t("education.languages.spanish.title"), level: t("education.languages.spanish.level"), flag: spainflag },
+    { language: t("education.languages.english.title"), level: t("education.languages.english.level"), flag: ukflag },
   ];
   const eventos = [
     {
-      titulo: "Máster en Ingeniería Informática",
+      titulo: t("education.academic.master.title"),
       logo: uclm,
-      fecha: "Septiembre 2025",
+      fecha: t("education.academic.master.date"),
       lugar: "Escuela Superior de Informática de Ciudad Real, UCLM",
       actual: true,
     },
     {
-      titulo: "Grado en Ingeniería Informática",
+      titulo: t("education.academic.degree.title"),
       logo: uclm,
-      fecha: "Septiembre 2020 - Julio 2025",
+      fecha: t("education.academic.degree.date"),
       lugar: "Escuela Superior de Informática de Ciudad Real, UCLM",
-      detalle: "Especialización en Tecnologías de la Información",
+      detalle: t("education.academic.degree.detail"),
       actual: false,
     },
     {
-      titulo: "Bachillerato",
+      titulo: t("education.academic.bachelor.title"),
       logo: ies,
-      fecha: "Septiembre 2018 - Junio 2020",
+      fecha: t("education.academic.bachelor.date"),
       lugar: "IES Berenguela de Castilla, Bolaños de Calatrava",
-      detalle: "Modalidad de Ciencias y Tecnología",
+      detalle: t("education.academic.bachelor.detail"),
       actual: false,
     },
     {
-      titulo: "Educación Secundaria Obligatoria",
+      titulo: t("education.academic.institute.title"),
       logo: ies,
-      fecha: "Septiembre 2014 - Junio 2018",
+      fecha: t("education.academic.institute.date"),
       lugar: "IES Berenguela de Castilla, Bolaños de Calatrava",
       detalle: "",
       actual: false,
@@ -50,14 +52,14 @@ const Education = () => {
       ref={ref}
       className={`bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 p-8 scroll-mt-15 ${className}`}
     >
-      <h2 className="text-3xl font-semibold text-primary-700">Formación</h2>
+      <h2 className="text-3xl font-semibold text-primary-700">{t("header.education")}</h2>
       <div className="flex flex-col mt-5 lg:flex-row items-top justify-center max-w-(--breakpoint-xl) mx-auto gap-8 lg:gap-64">
         <div className="flex flex-col justify-center items-center">
-          <h3 className="text-2xl font-bold">Académica</h3>
+          <h3 className="text-2xl font-bold">{t("education.academic.title")}</h3>
           <Timeline eventos={eventos} />
         </div>
         <div className="flex flex-col items-center">
-          <h3 className="text-2xl font-bold">Idiomas</h3>
+          <h3 className="text-2xl font-bold">{t("education.languages.title")}</h3>
           <div className="mt-10 max-w-md mx-auto">
             {languages.map((lang, index) => (
               <div

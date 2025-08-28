@@ -1,8 +1,10 @@
-import React from "react";
 import foto from "../../assets/images/about/yo.jpg";
-import ContactInfo from "../util/ContactInfo";
+import SocialMedia from "../util/SocialMedia";
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
+  const { t } = useTranslation();
+
   return (
     <section
       id="home"
@@ -12,13 +14,12 @@ const Home = () => {
       <div className="gap-8 items-center px-4 mx-auto max-w-(--breakpoint-xl) xl:gap-16 md:grid md:grid-cols-2 md:px-10">
         <div className="mt-4 mb-6">
           <h1 className="text-4xl mb-2 tracking-tight font-bold text-gray-900 dark:text-white">
-            Alonso Crespo
+            {t('home.title')}
           </h1>
           <h2 className="mb-6
            text-4xl tracking-tight font-bold text-primary-700 dark:text-primary-600">
-            Ingeniero Informático
+            {t('home.subtitle')}
           </h2>
-          {/* Image for small screens - shows between h2 and ContactInfo */}
           <div className="flex justify-center mb-6 md:hidden">
           {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -28,10 +29,9 @@ const Home = () => {
             />
           </div>
           <p className="mb-6 hidden md:block font-light text-gray-900 md:text-lg dark:text-gray-400">
-            Bienvenido a mi portfolio, donde podrás encontrar información sobre
-            mi experiencia, habilidades y proyectos realizados.
+            {t('home.description')}
           </p>
-          <ContactInfo className="mb-6 justify-center md:justify-start"/>
+          <SocialMedia className="mb-6 justify-center md:justify-start"/>
           <div className="flex justify-center md:justify-start">
             <a
               href="#about"
@@ -52,7 +52,7 @@ const Home = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-              Conóceme!
+              {t('home.cta')}
             </a>
           </div>
         </div>

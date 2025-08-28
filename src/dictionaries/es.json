@@ -1,0 +1,129 @@
+{
+    "header": {
+        "home": "Inicio",
+        "about": "Sobre mi",
+        "skills": "Habilidades",
+        "education": "Formación",
+        "experience": "Experiencia",
+        "projects": "Proyectos",
+        "contact": "Contacto",
+        "language": "Idioma",
+        "theme": "Tema"
+    },
+    "home": {
+        "title": "Alonso Crespo",
+        "subtitle": "Ingeniero Informático",
+        "description": "Bienvenido a mi portfolio, donde podrás encontrar información sobre mi experiencia, habilidades y proyectos realizados.",
+        "cta": "Conóceme!"
+    },
+    "about":{
+        "text1": "¡Hola!👋 Mi nombre es Alonso Crespo Fernández. Desde pequeño, he tenido una fuerte atracción por la informática. Me fascinaba entender cómo funcionaban los ordenadores, desmontarlos y cacharrear por mi cuenta. Esta curiosidad inicial se convirtió con el tiempo en una verdadera pasión que me impulsó a aprender y a formarme en el ámbito tecnológico.",
+        "text2": "Finalmente, apasionado por el desarrollo de soluciones innovadoras y eficaces, me formé como Ingeniero Informático. Me destaco por mi capacidad para abordar problemas complejos con un enfoque estructurado, priorizando siempre la calidad y la funcionalidad en los proyectos que desarrollo. Mi compromiso con el aprendizaje continuo y la excelencia me impulsan a enfrentar nuevos retos con entusiasmo y creatividad."
+    },
+    "skills": {
+        "soft":{
+            "title": "Personales",
+            "analitic_thought": "Pensamiento analítico",
+            "teamwork": "Trabajo en equipo",
+            "problem_solving": "Resolución de problemas",
+            "curiosity_and_continuous_learning": "Curiosidad y aprendizaje continuo",
+            "effective_communication": "Comunicación efectiva",
+            "adaptability": "Adaptabilidad",
+            "creativity": "Creatividad",
+            "autonomy": "Autonomía"
+        },
+        "hard":{
+            "title": "Técnicas",
+            "programming_languages": "Lenguajes de programación",
+            "frontend_development": "Desarrollo Frontend",
+            "backend_development": "Desarrollo Backend",
+            "database": "Bases de datos",
+            "infrastructure_and_devops": "Infraestructura y DevOps",
+            "tools_and_collaboration": "Herramientas y Colaboración"
+        }
+    },
+    "education": {
+        "academic":{
+            "title": "Académica",
+            "master":{
+                "title": "Máster en Ingeniería Informática",
+                "date": "Septiembre 2025"
+            },
+            "degree":{
+                "title": "Grado en Ingeniería Informática",
+                "date": "Septiembre 2020 - Julio 2025",
+                "detail": "Especialización en Tecnologías de la Información"
+            },
+            "bachelor":{
+                "title": "Bachillerato",
+                "date": "Septiembre 2018 - Junio 2020",
+                "detail": "Modalidad de Ciencias y Tecnología"
+            },
+            "institute":{
+                "title": "Educación Secundaria Obligatoria",
+                "date": "Septiembre 2014 - Junio 2018"
+            }
+        },
+        "languages": {
+            "title": "Idiomas",
+            "spanish": {
+                "title": "Español",
+                "level": "Lengua nativa"
+            },
+            "english": {
+                "title": "Inglés",
+                "level": "B2 First Cambridge"
+            }
+        }
+    },
+    "experience":{
+        "library":{
+            "title": "Becario TIC",
+            "date": "Enero 2023 - Junio 2024",
+            "place": "Biblioteca General de Ciudad Real, UCLM",
+            "description": "· Preparación y mantenimiento de equipamiento para el PAS y PDI.\n · Atención, información y resolución de incidencias de estudiantes."
+        }
+    },
+    "projects":{
+        "filter": "Filtrar:",
+        "all": "Todos",
+        "web_apps": "Aplicaciones Web",
+        "desktop_apps": "Aplicaciones de Escritorio",
+        "mobile_apps": "Aplicaciones Móvil",
+        "others": "Otros",
+        "project_link": "Ver Proyecto",
+        "beattracker": "Bot para el seguimiento de eventos y artistas musicales con integración de Ticketmaster.",
+        "compresi":"Aplicación de escritorio para la compresión de imágenes instantánea y eficiente.",
+        "crowdsense": "Aplicación para facilitar la coordinación de ayuda ciudadana en situaciones de emergencia.",
+        "ipokemon": "Aplicación estilo Pokémon con un sistema de combate por turnos.",
+        "lists": "Aplicación web colaborativa para la gestión de listas de la compra.",
+        "littleerp": "Gestor ERP para optimizar la gestión financiera en pequeñas y medianas empresas.",
+        "payesi": "Aplicación web para realizar transacciones P2P entre usuarios con integración de PayPal.",
+        "portfolio": "Portfolio con información personal, proyectos y habilidades."
+    },
+    "contact": {
+        "contact_info": "Información de contacto",
+        "email": "Correo electrónico",
+        "phone": "Teléfono",
+        "form": {
+            "title": "Contáctame",
+            "name": "Nombre",
+            "name_hint": "Nombre de contacto",
+            "email": "Correo electrónico",
+            "email_hint": "ejemplo@ejemplo.com",
+            "subject": "Asunto",
+            "subject_hint": "Asunto del mensaje",
+            "message": "Mensaje",
+            "message_hint": "Contenido del mensaje",
+            "send": "Enviar mensaje",
+            "sending": "Enviando..."
+        }
+    },
+    "footer": {
+        "text": "Todos los derechos reservados.",
+        "last_modified": "Última modificación: Agosto 2025"
+    },
+    "others":{
+        "current": "Actualidad"
+    }
+}  

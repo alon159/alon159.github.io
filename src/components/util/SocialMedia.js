@@ -1,31 +1,17 @@
-import React from "react";
 import Link from "next/link";
 
-const ContactInfo = ({ className = "" }) => {
-  const contactMethods = [
+const SocialMedia = ({ className = "" }) => {
+  const media = [
     {
-      type: "email",
-      href: "mailto:aloncrespfer@gmail.com",
+      href: "https://1drv.ms/b/c/2af8bef3e70df28f/Efjy9FoR2FRJvX5YmaOGGloBSkQWSsh6PfR88KVA8Tz_Bg?e=oQNILS",
       icon: (
         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-          <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+          <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clipRule="evenodd" />
         </svg>
       ),
-      label: "Email"
+      label: "CV"
     },
     {
-      type: "phone",
-      href: "tel:+34685034121",
-      icon: (
-        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-        </svg>
-      ),
-      label: "Teléfono"
-    },
-    {
-      type: "linkedin",
       href: "https://linkedin.com/in/alonso-crespo",
       icon: (
         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -35,7 +21,6 @@ const ContactInfo = ({ className = "" }) => {
       label: "LinkedIn"
     },
     {
-      type: "github",
       href: "https://github.com/alon159",
       icon: (
         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -48,12 +33,12 @@ const ContactInfo = ({ className = "" }) => {
 
   return (
     <div className={`flex flex-wrap gap-4 ${className}`}>
-      {contactMethods.map((contact) => (
+      {media.map((contact) => (
         <Link
-          key={contact.type}
+          key={contact.label}
           href={contact.href}
-          target={contact.type === 'email' || contact.type === 'phone' ? '_self' : '_blank'}
-          rel={contact.type === 'email' || contact.type === 'phone' ? '' : 'noopener noreferrer'}
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 hover:text-primary-700 dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:text-white transition-colors"
           title={`Contactar por ${contact.label}`}
         >
@@ -65,4 +50,4 @@ const ContactInfo = ({ className = "" }) => {
   );
 };
 
-export default ContactInfo;
+export default SocialMedia;
