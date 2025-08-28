@@ -116,7 +116,10 @@
             "message": "Message",
             "message_hint": "Content of the message",
             "send": "Send message",
-            "sending": "Sending..."
+            "sending": "Sending...",
+            "sent_status": "Message sent successfully!",
+            "sent_message1": "Thank you for reaching out.",
+            "sent_message2": "I will get back to you soon!"
         }
     },
     "footer": {

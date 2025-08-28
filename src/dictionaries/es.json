@@ -116,7 +116,10 @@
             "message": "Mensaje",
             "message_hint": "Contenido del mensaje",
             "send": "Enviar mensaje",
-            "sending": "Enviando..."
+            "sending": "Enviando...",
+            "sent_status": "Mensaje enviado correctamente!",
+            "sent_message1": "Gracias por ponerte en contacto conmigo.",
+            "sent_message2": "Te intentaré responder lo antes posible"
         }
     },
     "footer": {

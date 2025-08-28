@@ -2,7 +2,7 @@ import { useForm, ValidationError } from "@formspree/react";
 import { useTranslation } from 'react-i18next';
 
 const ContactForm = () => {
-    const [state, handleSubmit] = useForm("algo");
+    const [state, handleSubmit] = useForm("xyzdygrl");
     const { t } = useTranslation();
 
     if (state.succeeded) {
@@ -12,10 +12,13 @@ const ContactForm = () => {
                     <span className="text-4xl">✅</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    Message Sent Successfully!
+                    {t("contact.form.sent_status")}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                    Thank you for reaching out. I will get back to you soon!
+                    {t("contact.form.sent_message1")}
+                </p>
+                <p className="text-gray-600 dark:text-gray-300">
+                    {t("contact.form.sent_message2")}
                 </p>
             </div>
         );
@@ -106,7 +109,7 @@ const ContactForm = () => {
             <button
                 type="submit"
                 disabled={state.submitting}
-                className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 disabled:scale-100 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+                className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 disabled:scale-100 cursor-pointer disabled:cursor-not-allowed flex items-center justify-center space-x-2"
             >
                 {state.submitting ? (
                     <>
